@@ -1,0 +1,26 @@
+[project]
+name = "movie-recommender-demo"
+version = "0.1.0"
+description = "A workshop demo showing how AI/ML recommendation systems (like Netflix) work."
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "ipykernel>=6.29",
+]
+
+[tool.uv]
+# Optional: ensure uv respects this environment when running notebooks
+default-groups = ["default"]
+
+# For developers, you can define optional dependencies:
+[project.optional-dependencies]
+dev = [
+    "jupyterlab>=4.2",
+    "notebook>=7.2",
+]
